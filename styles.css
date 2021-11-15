@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 10px;
+}
+p {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+.ex-padding {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  color: hsl(223, 47%, 23%);
+  margin-right: 80px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  box-shadow: -4px 10px 20px 4px rgba(0, 0, 0, 0.1);
+  align-content: center;
+  width: 450px;
+  height: 600px;
+  margin: 20px auto;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 100%);
+}
+.grid-item {
+  padding: 20px;
+
+  text-align: center;
+}
+
+.grid-item.bgItem {
+  background-image: url("images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  border-radius: 20px 20px 0px 0px;
+  background-size: cover;
+  height: 200px;
+  padding: 0;
+}
+
+.grid-item.bgItem2 {
+  background-color: #f8f9fe;
+  border-radius: 20px;
+  justify-items: center;
+  width: 350px;
+  height: 100px;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  width: 350px;
+  height: 50px;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  background: hsl(245, 75%, 52%);
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  box-shadow: -4px 10px 20px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: #776cf1;
+  text-decoration: none;
+  color: hsl(225, 100%, 98%);
+}
+.dark-link {
+  font-weight: 700;
+  margin: 20px;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+.dark-link:hover {
+  color: hsl(223, 47%, 23%);
+}
+a {
+  color: hsl(245, 75%, 52%);
+}
+a:hover {
+  color: #776cf1;
+  text-decoration: none;
+}
+.attribution {
+  text-align: center;
+}
+@media only screen and (min-width: 375px) {
+  body {
+    background-image: url("images/pattern-background-mobile.svg");
+  }
+}
+@media only screen and (max-width: 1440px) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+}
